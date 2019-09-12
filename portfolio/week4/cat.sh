@@ -1,6 +1,7 @@
 #!/bin/bash
+#Student Id "10497312"
 
-read -p "type the name of the folder " Foldername
+read -p "Type the name of the folder " Foldername
 if [ $Foldername = 'secret.txt' ]; then
 cat $Foldername
 exit 0

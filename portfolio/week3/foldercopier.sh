@@ -1,4 +1,9 @@
 #!/bin/bash
+
+ #Student Id "10497312"
+ #Task 4
+
+
 read -p "type the name of the folder you would like to copy: " folderName
 #if the name is a valid directory
 if [ -d "$folderName" ]; then
