@@ -28,7 +28,7 @@ case $No in
  ~/CSI6203/portfolio/week3/savepassword.sh;;
  #Read a password
  "5")
- ~/CSI6203/portfolio/week2/secret.txt;;
+ ~/CSI6203/portfolio/week3/secret.txt;;
  #Print newest file
  "6")
  ~/CSI6203/portfolio/week3/Task4.sh;;

@@ -2,7 +2,7 @@
 #Student Id "10497312"
 
 #Ask folder name
-read -p "Enter the folder name:" foldername
+read -p "Enter the folder name you wish to save password file:" foldername
 
 #make folder
 mkdir "$foldername"

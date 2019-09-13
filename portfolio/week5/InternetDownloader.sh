@@ -2,6 +2,7 @@
  
 #Student Id "10497312"
  
+ 
 ping -c1 127.0.0.1 
  #while [ $url!='exit' ]; do
 if [ $? != 0 ];then

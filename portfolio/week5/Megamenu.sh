@@ -5,20 +5,24 @@
 
 #Week5 Task5
 
-echo -e "\e[0;31m 1. Create a folder \e[0m"
-echo -e "\e[1;31m 2. List files in a folder \e[0m"
+echo -e "\e[0;32m 1. Create a folder \e[0m"
+echo -e "\e[1;32m 2. List files in a folder \e[0m"
 echo -e "\e[0;37m 3. Copy a folder \e[0m"
 echo -e "\e[0;36m 4. Save a password \e[0m"
 echo -e "\e[1;36m 5. Read a password \e[0m"
 echo -e "\e[0;37m 6. Print newest file\e[0m"
-echo -e "\e[0;32m 7. Calculator \e[0m"
-echo -e "\e[1;32m 8. Internet Downloader \e[0m"
+echo -e "\e[0;31m 7. Calculator \e[0m"
+echo -e "\e[1;31m 8. Internet Downloader \e[0m"
 echo -e "\e[0;37m 9. Read a file \e[0m"
 echo -e "\e[0;35m 10.print every 3rd number from 1 to 1000 \e[0m"  
       
        
 #Ask the number for proceed
-read -p "Type any number to you wish proceed:" No 
+read -p "Type any number to you wish proceed or type 'Exit' for quit the process:" No 
+
+#Add loop for continue the process
+while [ $No != "Exit" ]
+        do
 
 case $No in 
 #Create a folder
@@ -32,16 +36,16 @@ case $No in
  ~/CSI6203/portfolio/week3/foldercopier.sh;;
  #Save a password
  "4")
- ~/CSI6203/portfolio/week3/savepassword.sh;;
+ ~/CSI6203/portfolio/week2/savepassword.sh;;
  #Read a password
  "5")
- ~/CSI6203/portfolio/week2/secret.txt;;
+ ~/CSI6203/portfolio/week3/secret.txt;;
  #Print newest file
  "6")
- ~/CSI6203/portfolio/week3/Task4.sh;;
+ ~/CSI6203/portfolio/week3/task4.sh;;
  #Calculator
  "7")
- ~/CSI6203/portfolio/week4/Calculator.sh;;
+ ~/CSI6203/portfolio/week4/calculator.sh;;
  #Internet Downloader
  "8")
  ~/CSI6203/portfolio/week5/InternetDownloader.sh;;
@@ -54,8 +58,11 @@ case $No in
  
  *)
  #Error message for unknown number
- echo "Unknown number";;
+ echo "Invalid character";;
 
 esac
+read -p "Type any number to you wish proceed or type 'Exit' for quit the process:" No 
+
+done
 
 exit 0
