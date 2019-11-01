@@ -1,4 +1,7 @@
 #!/bin/bash
+#Student Id "10497312"
+
+
 #get info about networking from the ifconfig command
 net_info="$(ifconfig)"
 #parse out the ip address lines using sed

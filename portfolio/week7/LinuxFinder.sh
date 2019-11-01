@@ -1,3 +1,6 @@
+#Student Id "10497312"
+ 
+ 
  #give the editing message
 echo -e "editing file..."
 #Next sed command to insert a newline &assign the output for a variable

@@ -1,5 +1,9 @@
 #!/bin/bash
+#Student Id "10497312"
 
+htmlContent=$(curl -s http://example.com)
+title=$(echo "$htmlContent" | sed -rn 's/<h1>(.*)<\/h1>/\1/ p')
 
-curl -s http://www.example.com | sed -n -r 's/<h1>(.*)<\/h1>/ \1 /p; s/<p>(.*)/ \1 /p; s/<p>(.*)<\/p>/ \1 /p'
+body=$(echo "$htmlContent" | sed -rn "/<p>[^<](.|\n)*?<\/p>/ p")
 
+echo -e $title "\n" $body

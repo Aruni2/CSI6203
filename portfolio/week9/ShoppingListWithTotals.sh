@@ -1,3 +1,6 @@
+#!/bin/bash
+#Student Id "10497312"
+
 awk 'BEGIN{
     FS =",";
     currency="$";

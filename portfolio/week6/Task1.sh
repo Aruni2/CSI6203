@@ -1,4 +1,5 @@
 #!/bin/bash
+#Student Id "10497312"
 
 VAR1=$1
 printError()
