@@ -1,0 +1,34 @@
+#!/bin/bash
+RED=$'\033[31m'
+WHITE=$'\033[0m'
+
+printError()
+{
+    echo -e "$RED ERROR: $WHITE $1" 
+}
+
+getNumber()
+{
+    read -p "$1:"
+
+    while (( $REPLY < 42 || $REPLY > 42 )); do
+        if (( $REPLY < $2 || $REPLY > $3 )); then
+            printError "Input must be between $2 and $3"
+            read -p "$1: "
+        elif (( $REPLY < 42 )); then
+            echo "Too Low!"
+            read -p "$1: "
+        elif (( $REPLY > 42 )); then
+            echo "Too High!"
+            read -p "$1: "
+        fi
+    done
+
+    echo "Correct!"
+}
+
+echo "this is the start of the script"
+getNumber "please type a number between 1 and 100" 1 100
+echo "Thank you!"
+
+

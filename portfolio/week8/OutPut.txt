@@ -1,0 +1,17 @@
+Download Function Complete
+
+Running the Download Function
+  \033[31mERROR:\033[0m  $VAR1
+  \033[31mERROR:\033[0m $1
+  This Is The Beginning Of The Script
+
+  Thank you!
+
+  Thank you!
+
+    Too Low!
+   
+    Too High!
+
+    Right!
+       The ares for a triangle with base: $1 and height:$i and height:$j is :$Result
