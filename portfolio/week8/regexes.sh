@@ -1,23 +1,25 @@
 #!/bin/bash
-#Student Id "10497312"
+#Student Id "10497312
 
 #all sed statement 
 echo "All sed statement"
 grep -r "sed"
 
-echo "All	lines	that	starts	with	the	letter	m"
-grep -r "^m"
+echo -e "All sed patterns: \n"
+grep -r "sed.*$"
+echo -e "\n"
 
-#echo "All	lines	that	contain	three	digit	numbers"
-#grep -r "^[0-9]{2}$"
-#grep -P '(?<!\d)\d{4}(?!\d)'
+echo -e "All lines starts with m: \n"
+grep -r "^m.*$"
+echo -e "\n"
 
-echo "All	lines	that	start	with	a	vowel"
-grep -i '^[^aeiou]' 
+echo -e "All lines containing three digit numbers: \n"
+grep -r ".*[0-9]{3}.*$"
+echo -e "\n"
 
-echo "All	lines	that	contain	loops"
-grep -r "^m"
+echo -e "All lines starting with a vowel: \n"
+grep -r "^[AEIOUaeiou].*$"
+echo -e "\n"
 
-echo "All	echo	statements	with	at	least	three	words"
-grep -r "^m"
-
+echo -e "All echo statements with atleast three words: \n"
+grep -r "echo .*\w*\s\w*\s\w*\s.*$"
